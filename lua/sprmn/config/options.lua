@@ -19,16 +19,16 @@ vim.opt.expandtab = true
 -- Line numbers set relative numbering only in visual mode
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.api.nvim_create_autocmd({"BufLeave","FocusLost","InsertEnter"}, {
-  callback = function(ev)
-    vim.opt.relativenumber = false
-  end
-})
-vim.api.nvim_create_autocmd({"BufEnter","FocusGained","InsertLeave"}, {
-  callback = function(ev)
-    vim.opt.relativenumber = true
-  end
-})
+-- vim.api.nvim_create_autocmd({"BufLeave","FocusLost","InsertEnter"}, {
+--   callback = function(ev)
+--     vim.opt.relativenumber = false
+--   end
+-- })
+-- vim.api.nvim_create_autocmd({"BufEnter","FocusGained","InsertLeave"}, {
+--   callback = function(ev)
+--     vim.opt.relativenumber = true
+--   end
+-- })
 
 -- Update frequently
 vim.opt.updatetime = 100
