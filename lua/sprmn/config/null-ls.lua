@@ -4,7 +4,6 @@ local async = event == "BufWritePost"
 
 
 require("mason-null-ls").setup({
-    ensure_installed = { "prettierd", "eslint_d" },
     automatic_installation = false,
     automatic_setup = true,
 })
@@ -38,8 +37,9 @@ null_ls.setup({
   end,
 
   sources = {
-    -- null_ls.builtins.diagnostics.eslint,
-    null_ls.builtins.completion.spell,
+    null_ls.builtins.diagnostics.eslint_d,
+    null_ls.builtins.formatting.prettierd
+    -- null_ls.builtins.completion.spell,
   }
 })
 

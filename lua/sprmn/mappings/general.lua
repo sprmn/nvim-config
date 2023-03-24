@@ -11,5 +11,13 @@ vim.keymap.set('n', '<C-l>', '<C-w>l')
 vim.keymap.set('n', ']q', ':cnext<cr>')
 vim.keymap.set('n', '[q', ':cprev<cr>')
 
+-- Faster loclist navigation
+vim.keymap.set('n', ']l', ':lnext<cr>')
+vim.keymap.set('n', '[l', ':lprev<cr>')
+
 -- Remove search with additional return key
 vim.keymap.set('n', '<cr>', vim.cmd.nohlsearch, { silent = true, noremap = true })
+
+-- Easy copy to clipboard
+vim.keymap.set('v', '<leader>cp', '"*y')
+vim.keymap.set('n', '<leader>cp', '"*y')
