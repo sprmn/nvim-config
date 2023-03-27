@@ -38,7 +38,8 @@ null_ls.setup({
 
   sources = {
     null_ls.builtins.diagnostics.eslint_d,
-    null_ls.builtins.formatting.prettierd
+    null_ls.builtins.formatting.prettierd,
+    require("typescript.extensions.null-ls.code-actions"),
     -- null_ls.builtins.completion.spell,
   }
 })
