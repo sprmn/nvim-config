@@ -11,3 +11,5 @@ lsp.tsserver.setup{
 }
 
 lsp.graphql.setup{}
+
+lsp.prismals.setup{}
