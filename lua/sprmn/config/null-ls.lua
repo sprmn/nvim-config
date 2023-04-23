@@ -44,4 +44,4 @@ null_ls.setup({
   }
 })
 
-require("mason-null-ls").setup_handlers()
+require("mason-null-ls").setup()
