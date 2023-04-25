@@ -16,9 +16,13 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
+-- no wrap
+vim.opt.wrap = false
+
 -- Line numbers set relative numbering only in visual mode
 vim.opt.number = true
 vim.opt.relativenumber = true
+-- next stuff gives ugly lines in terminal mode
 -- vim.api.nvim_create_autocmd({"BufLeave","FocusLost","InsertEnter"}, {
 --   callback = function(ev)
 --     vim.opt.relativenumber = false

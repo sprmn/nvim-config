@@ -53,11 +53,11 @@ cmp.setup({
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
     { name = 'copilot' },
-    { name = 'nvim_lsp_signature_help' }
+    { name = 'nvim_lsp_signature_help' },
   }, {
     { name = 'buffer' },
   }),
-  -- experimental = {
-  --   ghost_text = true,
-  -- },
+  experimental = {
+    ghost_text = true,
+  },
 })
