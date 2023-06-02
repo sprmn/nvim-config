@@ -7,20 +7,28 @@ require("mason-lspconfig").setup({
 local lsp = require("lspconfig")
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-lsp.tsserver.setup{
+lsp.tsserver.setup {
   capabilities
 }
 
-lsp.graphql.setup{
+lsp.graphql.setup {
   capabilities
 }
 
-lsp.prismals.setup{}
+lsp.prismals.setup {}
 
-lsp.jdtls.setup{
+lsp.jdtls.setup {
   capabilities
 }
 
-lsp.lua_ls.setup{
+lsp.lua_ls.setup {
   capabilities
 }
+
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+  border = "rounded",
+})
+
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
+  border = "rounded",
+})

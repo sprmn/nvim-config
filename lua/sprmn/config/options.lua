@@ -45,3 +45,11 @@ vim.opt.cmdheight = 0
 -- Update frequently
 vim.opt.updatetime = 100
 
+vim.diagnostic.config({
+  virtual_text = false,
+  severity_sort = true,
+  float = {
+    border = 'rounded',
+    source = 'always',
+  },
+})

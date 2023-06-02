@@ -1,9 +1,4 @@
-local colors = require 'material.colors'
-
 require('material').setup {
-  contrast = {
-    floating_windows = true
-  },
   plugins = {
     "gitsigns",
     "indent-blankline",
