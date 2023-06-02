@@ -34,6 +34,14 @@ vim.opt.relativenumber = true
 --   end
 -- })
 
+-- enable cursorline
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"
+
+-- remove bottom line
+vim.opt.showmode = false
+vim.opt.cmdheight = 0
+
 -- Update frequently
 vim.opt.updatetime = 100
 
