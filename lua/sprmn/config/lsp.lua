@@ -10,6 +10,12 @@ lsp.tsserver.setup{
   capabilities = require('cmp_nvim_lsp').default_capabilities()
 }
 
-lsp.graphql.setup{}
+lsp.graphql.setup{
+  capabilities = require('cmp_nvim_lsp').default_capabilities()
+}
 
 lsp.prismals.setup{}
+
+lsp.jdtls.setup{
+  capabilities = require('cmp_nvim_lsp').default_capabilities()
+}
