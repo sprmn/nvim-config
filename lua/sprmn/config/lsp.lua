@@ -12,7 +12,8 @@ lsp.tsserver.setup {
 }
 
 lsp.graphql.setup {
-  capabilities
+  capabilities,
+  filetypes = { "graphql", "typescript", "javascript", "typescriptreact", "javascriptreact" },
 }
 
 lsp.prismals.setup {}
@@ -22,6 +23,10 @@ lsp.jdtls.setup {
 }
 
 lsp.lua_ls.setup {
+  capabilities
+}
+
+lsp.pyright.setup {
   capabilities
 }
 

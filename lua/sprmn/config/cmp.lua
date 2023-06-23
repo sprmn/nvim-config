@@ -26,10 +26,6 @@ local opts = {
       behavior = cmp.ConfirmBehavior.Replace,
       select = true, -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     }),
-    ["<CR>"] = cmp.mapping.confirm {
-      behavior = cmp.ConfirmBehavior.Replace,
-      select = false,
-    },
     ["<Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
@@ -75,4 +71,12 @@ cmp.setup.cmdline({ '/', '?' }, {
   sources = {
     { name = 'buffer' },
   }
+})
+
+cmp.setup.cmdline(':', {
+  sources = cmp.config.sources({
+    { name = 'path' }
+  }, {
+    { name = 'cmdline' }
+  })
 })
